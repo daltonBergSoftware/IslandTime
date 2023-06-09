@@ -1,0 +1,47 @@
+:root {
+    --color-bg: white;
+    --color-text-main: #000000;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk";
+  }
+  
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    background-color: var(--color-bg);
+    margin: 1rem;
+    line-height : 14px;
+  }
+
+  .shirt-grid-container{
+    display: grid;
+    gap: 2px;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .shirt-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .shirtImg{
+    width: 70%;
+    height: 70%;
+  }
+  
+  .categoryCol{
+    vertical-align: top;
+    padding-top: 5%;
+    line-height: 150%;
+    font-size: 1.5vmax;
+
+  }
