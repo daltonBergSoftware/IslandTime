@@ -1,0 +1,129 @@
+/* Our default values set as CSS variables */
+:root {
+    --color-bg: white;
+    --color-text-main: #000000;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk";
+  }
+  
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    background-color: var(--color-bg);
+    margin: .3rem;
+    line-height : 14px;
+  }
+
+  .logoImgStyle{
+    text-align: center;
+   
+  }
+
+  .logoImgHome{
+    width: 125px;
+    
+  }
+  
+  h1{
+    line-height: 15px;
+    margin: 1rem;
+  }
+  
+  /* Subheading */
+  h2 {
+    color: #2800FF;
+    line-height: 5px;
+    margin-bottom: 1rem
+  }
+  
+  /* Makes the name of the featured product centered with the image of the product. */
+  .shirt, .short, .accessory, .table, .other  {
+    text-align: center;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+
+  }
+  
+
+  
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  .titleRow {
+    padding-top: 2px;
+    padding-bottom: 3px;
+  }
+  
+
+  /*
+  ".row:after clears floats after the columns, this allows the colums to line up  horizontally."
+  The item image and item text go in column 1.
+  The up and down arrows go in column 2. 
+  This allows the 1st column to be on the left and the 2nd column to be centered on the right of column 1.
+  */
+  
+  .column1 {
+      
+    float: left;
+    
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+  
+  
+  
+/* Makes the images of the accessories the same size*/
+.IMGsize{
+  width:  110%;
+  height: 90%;
+  object-fit: cover;
+    
+}
+  
+/*
+Sets the size of the arrows in column 2.
+*/
+img.arrow {
+    
+  height: 115%;
+  width: 30%;
+}
+
+.featureLink{
+  color: black;
+}
+  
+  
+  /* Links that open files in the editor */
+  .fileopener {
+    cursor:pointer;
+    font-weight:bold;
+    border-bottom:3px solid var(--color-primary);
+    color: var(--color-secondary);
+  }
+  .fileopener:hover {
+    border-bottom:3px solid var(--color-secondary);
+  }
+  
+  

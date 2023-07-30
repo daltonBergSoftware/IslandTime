@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Island Time Co.</title>
+    <link rel="stylesheet" href="island_time_style_home.css">
+    <script src="island_time_script_home.js"></script>
+  </head>
+  
+  <body>
+    <div class = "logoImgStyle">
+        <img  class = "logoImgHome" src="assetsForHome/IslandTimeLogoHome.jpg" alt="Logo">
+    </div>
+    
+    <p style = "text-align: center;">
+      <img src="assetsForHome/islandtimeFrontPic.jpeg" width="400px"  alt="Home page front picture">
+    </p>
+    
+    <p> 
+      <h3>
+        What time is it? Island Time!
+      </h3>
+        
+      <h4>
+        If you'd like to look like you're on island time... you've come to the right place! 
+      </h4>
+    
+      <h4>
+        Island time merchandise:
+      </h4>
+    
+      <!-- 
+      Start of the table that will have the featured items of each category along with hyperlink to each of the items own page.
+      The fitst <tr> creates the name of each column.
+      -->
+      <table style="width:100%">
+        <tr>
+          <th style="width:20%" class = "titleRow">
+            <a class =  "featureLink" href= "AllProductsPage/hawaiianShirtFilter.html">Shirts</a>
+          </th>
+          <th style="width:20%" class = "titleRow">
+            <a class =  "featureLink" href="AllProductsPage/bottomsFilter.html">Shorts</a>
+          </th> 
+          <th style="width:20%" class = "titleRow">
+            <a class =  "featureLink" href="https://accessories-for-it.glitch.me">Accessories</a>
+          </th>
+          <th style="width:20%" class = "titleRow">
+            <a class =  "featureLink" href="https://tables-for-it.glitch.me">Tables</a>
+          </th>
+          <th style="width:20%" class = "titleRow">
+            <a class =  "featureLink" href="https://otheritems-for-it.glitch.me">Others</a>
+          </th>
+        </tr>
+        
+        <!--
+        This the 2nd row of the first coulmun, the one that has Hawaiian shirts in it.
+        This slot will show the featured shirts that Island Time is offering.
+        -->
+        <tr>
+          <td>
+            <div class = "row">
+              <div class = "column1">
+                <img id="slideShirt" class = "IMGsize" src="assetsForHome/Shirts/Shirt1.jpeg" alt="Hawaiian Shirt 1">
+              </div>
+
+              <div class = "column2">
+                <img onclick="nextShirt()" class = "arrow" src="assetsForHome/UpArrow.png" alt="Up arrow">
+                <br>
+                <img onclick="previousShirt()" class = "arrow" src="assetsForHome/DownArrow.png" alt="down arrow">
+              </div>
+          
+            </div> 
+            <h3 class = "shirt" id ="shirtName" style = "text-align: center;">
+              Shirt 1
+            </h3> 
+          </td>
+          
+          <!--
+          This the 2nd row of the second coulmun, the one that has Hawaiian shorts in it.
+          This slot will show the featured shorts that Island Time is offering.
+          -->
+          <td >
+            <div class = "row">
+              <div class = "column1">
+                <img id="slideShort" class = "IMGsize" src="assetsForHome/Shorts/short1.jpeg" alt="Shorts 1">
+              </div>
+
+             <div class = "column2">
+                <img onclick="nextShort()" class = "arrow" src="assetsForHome/UpArrow.png" alt="Up arrow">
+                <br>
+                <img onclick="previousShort()" class = "arrow" src="assetsForHome/DownArrow.png" alt="Down arrow">
+              </div>
+
+            </div>
+            <h3 class = "short" id ="shortName" style = "text-align: center;">
+              Short 1
+            </h3>
+          </td> 
+          
+          <!--
+          This the 2nd row of the third coulmun, the one that has island time accessories in it.
+          This slot will show the featured accessories that Island Time is offering.
+          -->
+          <td>
+            <div class = "row">
+              <div class = "column1">
+                <img id="slideAccessory" class = "IMGsize" src="assetsForHome/Accessories/accessory1.jpeg" alt="Accessory 1">
+              </div>
+
+             <div class = "column2">
+                <img onclick="nextAccessory()" class = "arrow" src="assetsForHome/UpArrow.png" alt="Up arrow">
+                <br>
+                <img onclick="previousAccessory()" class = "arrow" src="assetsForHome/DownArrow.png" alt="Down arrow">
+              </div>
+
+            </div>
+            <h3 class = "accessory" id ="accessoryName" style = "text-align: center;">
+              Accessory 1
+            </h3>
+          </td>
+          
+          <!--
+          This the 2nd row of the fourth coulmun, the one that has island time tables in it.
+          This slot will show the featured tables that Island Time is offering.
+          -->
+          <td>
+            <div class = "row">
+              <div class = "column1">
+                <img id="slideTable" class = "IMGsize" src="assetsForHome/Tables/pong_table_IT.jpeg" alt="Table 1">        
+              </div>
+
+             <div class = "column2">
+                <img onclick="nextTable()" class = "arrow" src="assetsForHome/UpArrow.png" alt="Up arrow">
+                <br>
+                <img onclick="previousTable()" class = "arrow" src="assetsForHome/DownArrow.png" alt="Down arrow">
+              </div>
+
+            </div>
+            <h3 class = "table" id ="tableName" style = "text-align: center;">
+              Table 1
+            </h3>
+          </td>
+          
+          <!--
+          This the 2nd row of the fifth coulmun, the one that has a variety of island time items not sold in the other columns.
+          This slot will show the featured other items that Island Time is offering.
+          -->
+          <td>
+            <div class = "row">
+              <div class = "column1">
+
+                <img id="slideOther" class = "IMGsize" src="assetsForHome/others/other1.jpeg" alt="Other 1">
+              </div>
+
+             <div class = "column2">
+                <img onclick="nextOther()" class = "arrow" src="assetsForHome/UpArrow.png" alt="Up arrow">
+                <br>
+                <img onclick="previousOther()" class = "arrow" src="assetsForHome/DownArrow.png" alt="Down arrow">
+              </div>
+              
+            </div>
+            <h3 class = "other" id ="otherName" style = "text-align: center;">
+              Other 1
+            </h3>
+          </td>
+          
+        </tr>
+        
+      </table>
+    
+    
+      <h2>
+        <strong>About the company:</strong>
+      </h2>
+        
+        <li>Created by 5 roommates</li>
+        <li>All about living in the moment</li>
+        <li>Nothing matters as long as you're having a good time</li>
+        <li>When you're on island time there's no time of the day</li>
+    </p>
+  
+      
+    
+    <!--This is just a comment; it does not affect your page.
+        Do not change or delete the code below; 
+        it allows the Glitch "Remix" button to appear in the top-right corner-->
+    
+    
+    <br />
+    Last Modified:
+    <script>
+      document.write(document.lastModified);
+    </script>
+  </body>
+  
+</html>

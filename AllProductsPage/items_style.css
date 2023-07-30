@@ -1,0 +1,174 @@
+:root {
+    --color-bg: white;
+    --color-text-main: #000000;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk";
+  }
+  
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    background-color: var(--color-bg);
+    margin: 0;
+    line-height : 14px;
+  }
+
+  img{
+    display: block;
+  }
+
+  /*The "headerLinkImage" class is used to put the hyperlinked logo and image of the cart on the same line */
+  .headerLinkImage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headerLinkImage::before{
+    content:"";
+  }
+
+  /*The "logoImg" class is used to change the style of the island time logo which sits at the top. */
+  .logoImg{
+    /*
+    height: 20%;
+    width: 20%;
+    margin-left: 45%;
+    */
+    width: 125px;
+    margin-left: 34%;
+  }
+
+  /*The "cartImg" is used to change the style of the image of the cart that sits at the top right. */
+  
+  .cartImg{
+    width: 40px;
+    /*
+    position: absolute;
+    right: 5%;
+    */
+  }
+  
+
+  
+
+  /* The "islandCategory" class is used soley for the world Filter that is found above the catregories on the product pages.*/
+  .islandCategory{
+    text-align: left;
+    padding-left: 0%;
+  }
+
+  /* The "sizeBox" class is used to add style to the horizontal check box that allows the consumer to select their size.*/
+  .sizeBox{
+    border: none;
+    float: middle;
+    margin-right: 7em;
+  }
+ 
+  /* The "itemLink class changes the style of the links of the filters on the product pages so that they're arent underlined and purple.*/
+  .itemLink{
+    text-decoration: none;
+    color: black;
+  }
+  
+
+  /*The class "categoryCol" is used to change the style of the categories/filters on the left hand side of the page. */
+  .categoryCol{
+    vertical-align: top;
+    padding-top: 0%;
+    line-height: 175%;
+    font-size: 1.3vmax;
+    font-family: monospace;
+  }
+
+  
+  /* 
+  These media queries are used to set how the prodcuts are layed out on the product page.
+  If the screen is smaller than the amount of cells in a row will be less, and the font size will be smaller.
+  This is used to make the page look better and more readiable for the user.
+  The class "island-grid-container" is used change the style of the table that holds the island time items.
+  */
+  @media screen and (max-width: 600px){
+    .island-grid-container{
+      display: grid;
+      gap: 2px;
+      width: 100%;
+      grid-template-columns: 50% 50%;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .island-item{
+      font-size: 1.5vmax;
+    }
+  }
+  
+
+  
+  @media screen and (max-width: 1000px) and (min-width: 601px){
+    .island-grid-container{
+      display: grid;
+      gap: 2px;
+      width: 100%;
+      grid-template-columns: 33% 33% 33%;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .island-item{
+      font-size: 1.5vmax;
+    }
+  }
+
+  
+  @media screen and (min-width: 1001px){
+    .island-grid-container{
+      display: grid;
+      gap: 2px;
+      width: 100%;
+      grid-template-columns: 25% 25% 25% 25%;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .island-item{
+      font-size: 1.2vmax;
+    }
+  }
+  
+/* 
+While island-grid-container controls the tables style, the class "island-item" corresponds to each individual cell.
+The cell includes The image of the item, name of item, and price(and + sign).
+This class is used to change the style within each indivdual cell.
+*/
+  .island-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+/* The class .itemImg is used to change the style of the image of the item.*/
+  .itemImg{
+    width: 80%;
+    height: 80%;
+  }
+  
+/*The "priceAmount" class is a div class that is used to put the price of the product and img of the plus sign on the same line. */
+  .priceAmount{
+    display: flex;
+    align-items: center;
+    margin-left: 42%;
+    color: green;
+  }
+
+/*The "addCartImg" is used to change the style of the cart image. */
+  .addCartImg{
+    width: 15%;
+    height: 60%;
+  }
